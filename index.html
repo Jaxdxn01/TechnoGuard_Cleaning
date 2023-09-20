@@ -1,0 +1,1406 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+
+		<title>TechnoGuard Cleaning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <body class="preload">
+   
+    <div id="main">        
+        <header>
+            <div class="logo-container">
+                <a href="https://technoguard.us/"> <img class="logo" src="img/tec.gif" alt="Logo"></a>
+            </div>
+            <div class="header-content">
+                <h1>Welcome to TechnoGuard Cleaning</h1>
+                <p class="text">Your Cleaning Checkout/in Site</p>
+                <div class="steps-container">
+            <div class="step-container">
+                    <div class="step">
+                        <strong>Step 1:</strong> Enter your full name and job number in the fields provided.
+                    </div>
+                    <div class="step">
+                        <strong>Step 2:</strong> Select the action (Issue or Return) and quantity for each item.
+                    </div>
+            </div>
+                    <div class="step">
+                        <strong>Step 3:</strong> Review your selections and click "Submit" when ready.
+                    </div>
+                </div>
+            </div>
+            <div class="form-container">
+                <label for="name" class="form-label">Full Name:</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name">
+                <label for="jnumber" class="form-label">Job Number:</label>
+                <input type="number" id="jnumber" name="jnumber" class="form-input" placeholder="Enter your job number">
+                <div class="return-issue-container">
+                    <label for="returnIssue">Select:</label>
+                    <select id="returnIssue" onchange="updateQuantities()">
+                        <option value="issue">Issue</option>
+                        <option value="return">Return</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+    
+    
+    
+        <hr><br><br><br><br><br><br> 
+            <input type="text" id="searchInput" onkeyup="searchItems()" placeholder="Search items...">
+        <br><br><br><br> 
+    
+    
+    
+    
+    <div class="container">  
+        
+    
+    
+    
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.-->   
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic38.jpg">
+        <div class="container-img">
+    <p>Vacuums</p>
+        </div>
+        </div>                        
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Vacuums</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-1', -1)">-</button>
+        <span id="quantity-value-1">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-1', 1)">+</button>
+    </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.-->   
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic18.jpg">
+        <div class="container-img">
+    <p>Vacuum Accessorie <br> 2'ft Extensions (2) <br> Brush attachment(1) <br>edge attachment (1)</p>
+        </div>
+        </div>                        
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-2', -1)">-</button>
+        <span id="quantity-value-2">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-2', 1)">+</button>
+    </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.-->   
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic34.jpg">
+        <div class="container-img">
+    <p>Vacuum Bags<br>(1 Box)</p>
+        </div>
+        </div>                        
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-3', -1)">-</button>
+        <span id="quantity-value-3">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-3', 1)">+</button>
+    </div>
+    </article>   
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.-->   
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic13.jpg">
+        <div class="container-img">
+    <p>25' Extension Cords</p>
+        </div>
+        </div>                            
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-4', -1)">-</button>
+        <span id="quantity-value-4">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-4', 1)">+</button>
+    </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.-->   
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic53.jpg">
+        <div class="container-img">
+    <p>50' Extension Cords</p>
+        </div>
+        </div>                            
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-5', -1)">-</button>
+        <span id="quantity-value-5">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-5', 1)">+</button>
+    </div>
+    </article>
+    
+    
+    
+    
+    </div>
+    
+    
+    <div class="container">
+    
+    
+    
+    
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.-->     
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic52.jpg">
+        <div class="container-img">
+    <p>100' Extension Cords</p>
+        </div>
+        </div>                            
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-6', -1)">-</button>
+        <span id="quantity-value-6">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-6', 1)">+</button>
+    </div>
+    </article>       
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.-->   
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic14.jpg">
+        <div class="container-img">
+    <p>Single GFI</p>
+        </div>
+        </div>                                
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-7', -1)">-</button>
+        <span id="quantity-value-7">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-7', 1)">+</button>
+    </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.-->   
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic40.jpg">
+        <div class="container-img">
+    <p>3-way GFCI</p>
+        </div>
+        </div>                                
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-8', -1)">-</button>
+        <span id="quantity-value-8">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-8', 1)">+</button>
+    </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.-->   
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic37.jpg">
+        <div class="container-img">
+    <p>Tile Puller</p>
+        </div>
+        </div>                                
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-9', -1)">-</button>
+        <span id="quantity-value-9">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-9', 1)">+</button>
+    </div>
+    </article>   
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.-->   
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic17.jpg">
+        <div class="container-img">
+    <p>Wet Floor Signs</p>
+        </div>
+        </div>                                    
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-10', -1)">-</button>
+        <span id="quantity-value-10">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-10', 1)">+</button>
+    </div>
+    </article>
+    
+    
+    
+    
+    </div>
+    
+    
+    <div class="container">
+    
+    
+    
+     
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.-->    
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic36.jpg">
+        <div class="container-img">
+    <p>Cones</p>
+        </div>
+        </div>                                    
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-11', -1)">-</button>
+        <span id="quantity-value-11">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-11', 1)">+</button>
+    </div>
+    </article> 
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.-->    
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic35.jpg">
+        <div class="container-img">
+    <p>Barricades</p>
+        </div>
+        </div>                                    
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-12', -1)">-</button>
+        <span id="quantity-value-12">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-12', 1)">+</button>
+    </div>
+    </article>    
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.-->   
+    <article class="style">
+    <div class="polaroid">
+         <img class="item" src="img/pic15.jpg">
+        <div class="container-img">
+    <p>Mop Sticks</p>
+        </div>
+        </div>                                        
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-13', -1)">-</button>
+        <span id="quantity-value-13">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-13', 1)">+</button>
+    </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.-->   
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic46.jpg">
+            <div class="container-img">
+                <p>Mop Bucket</p>
+            </div>
+        </div>                                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-14', -1)">-</button>
+            <span id="quantity-value-14">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-14', 1)">+</button>
+        </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.-->   
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic45.jpg">
+        <div class="container-img">
+                <p>Mop Wringer</p>
+            </div>
+        </div>                                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-15', -1)">-</button>
+            <span id="quantity-value-15">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-15', 1)">+</button>
+        </div>
+    </article>                        
+    
+    
+    
+    
+    </div>
+    
+    
+    <div class="container">
+    
+    
+    
+    
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.-->  
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic29.jpg">
+        <div class="container-img">
+    <p>Mop Heads<br>(Single)</p>
+        </div>
+        </div>                        
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-16', -1)">-</button>
+        <span id="quantity-value-16">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-16', 1)">+</button>
+    </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic1.jpg">
+        <div class="container-img">
+    <p>Rise</p>
+        </div>
+        </div>                        
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-17', -1)">-</button>
+        <span id="quantity-value-17">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-17', 1)">+</button>
+    </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic27.jpg">
+        <div class="container-img">
+    <p>Knee Pads<br>(Pair)</p>
+        </div>
+        </div>                        
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-18', -1)">-</button>
+        <span id="quantity-value-18">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-18', 1)">+</button>
+    </div>
+    </article>  
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic24.jpg">
+        <div class="container-img">
+    <p>Headlight</p>
+        </div> 
+        </div>                            
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-19', -1)">-</button>
+        <span id="quantity-value-19">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-19', 1)">+</button>
+    </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+    <div class="polaroid">
+        <img class="item" src="img/pic25.jpg">
+        <div class="container-img">
+    <p>Flashlight</p>
+        </div>
+        </div>                            
+    <!-- Quantity Box -->
+    <div class="quantity-box">
+        <h4>Quantity</h4>
+        <button class="quantity-minus" onclick="changeQuantity('quantity-value-20', -1)">-</button>
+        <span id="quantity-value-20">0</span>
+        <button class="quantity-plus" onclick="changeQuantity('quantity-value-20', 1)">+</button>
+    </div>
+    </article>
+    
+    
+    
+    
+    </div>
+    
+    
+    <div class="container">
+    
+    
+    
+    
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic10.jpg">
+            <div class="container-img">
+                <p>Spare Batteries<br>(1 pair)</p>
+            </div>
+        </div>                            
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-21', -1)">-</button>
+            <span id="quantity-value-21">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-21', 1)">+</button>
+        </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic55.jpg">
+            <div class="container-img">
+                <p>Scrapers</p>
+            </div>
+        </div>                                
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-22', -1)">-</button>
+            <span id="quantity-value-22">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-22', 1)">+</button>
+        </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic22.jpg">
+            <div class="container-img">
+                <p>Sponges<br>(Single)</p>
+            </div>
+        </div>                                
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-23', -1)">-</button>
+            <span id="quantity-value-23">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-23', 1)">+</button>
+        </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic32.jpg">
+            <div class="container-img">
+                <p>Swiffer Refills<br>(1 Box)</p>
+            </div>
+        </div>                                
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-24', -1)">-</button>
+            <span id="quantity-value-24">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-24', 1)">+</button>
+        </div>
+    </article> 
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic16.jpg">
+            <div class="container-img">
+                <p>Swiffer extensions</p>
+            </div>
+        </div>                                    
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-25', -1)">-</button>
+            <span id="quantity-value-25">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-25', 1)">+</button>
+        </div>
+    </article>
+    
+    
+    
+    
+    </div>
+    
+    
+    <div class="container">
+    
+    
+    
+    
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic47.jpg">
+            <div class="container-img">
+                <p>Trash Can/Wheels</p>
+            </div>
+        </div>                                    
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-26', -1)">-</button>
+            <span id="quantity-value-26">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-26', 1)">+</button>
+        </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic19.jpg">
+            <div class="container-img">
+                <p>Trash Bags<br>(1 Box)</p>
+            </div>
+        </div>            
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-27', -1)">-</button>
+            <span id="quantity-value-27">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-27', 1)">+</button>
+        </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic44.jpg">
+            <div class="container-img">
+                <p>5-Gallon Buckets</p>
+            </div>
+        </div>
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-28', -1)">-</button>
+            <span id="quantity-value-28">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-28', 1)">+</button>
+        </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic20.jpg">
+            <div class="container-img">
+                <p>Microfiber Packs<br>(1 Box)</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-29', -1)">-</button>
+            <span id="quantity-value-29">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-29', 1)">+</button>
+        </div>
+    </article>
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic31.jpg">
+            <div class="container-img">
+                <p>Flat Sticks</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-30', -1)">-</button>
+            <span id="quantity-value-30">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-30', 1)">+</button>
+        </div>
+    </article>
+    
+    
+    
+    
+    </div>
+    
+    
+    <div class="container">
+    
+    
+    
+    
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic30.jpg">
+            <div class="container-img">
+                <p>Uline Clean Wipes<br>(1 Pack)</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-31', -1)">-</button>
+            <span id="quantity-value-31">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-31', 1)">+</button>
+        </div>
+    </article>   
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic28.jpg">
+            <div class="container-img">
+                <p>Q-Tips<br>(1 Pack)</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-32', -1)">-</button>
+            <span id="quantity-value-32">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-32', 1)">+</button>
+        </div>
+    </article>     
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic41.jpg">
+            <div class="container-img">
+                <p>Anti-Static Brushes<br>(1 Pack)</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-33', -1)">-</button>
+            <span id="quantity-value-33">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-33', 1)">+</button>
+        </div>
+    </article>    
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic 3.jpg">
+            <div class="container-img">
+                <p>Greased Lightning</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-34', -1)">-</button>
+            <span id="quantity-value-34">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-34', 1)">+</button>
+        </div>
+    </article>    
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic 5.jpg">
+            <div class="container-img">
+                <p>Alcohol Gallon</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-35', -1)">-</button>
+            <span id="quantity-value-35">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-35', 1)">+</button>
+        </div>
+    </article>   
+        
+        
+        
+        
+    </div>
+    
+    
+    <div class="container">
+    
+    
+    
+    
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic4.jpg">
+            <div class="container-img">
+                <p>Perfecto</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-36', -1)">-</button>
+            <span id="quantity-value-36">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-36', 1)">+</button>
+        </div>
+    </article>   
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic2.jpg">
+            <div class="container-img">
+                <p>Staticide Gallon</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-37', -1)">-</button>
+            <span id="quantity-value-37">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-37', 1)">+</button>
+        </div>
+    </article>    
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic 6.jpg">
+            <div class="container-img">
+                <p>Simple Green</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-38', -1)">-</button>
+            <span id="quantity-value-38">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-38', 1)">+</button>
+        </div>
+    </article>    
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic 8.jpg">
+            <div class="container-img">
+                <p>Heavy Duty <br>Citrus Degreaser</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-39', -1)">-</button>
+            <span id="quantity-value-39">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-39', 1)">+</button>
+        </div> 
+    </article>   
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic 9.jpg">
+            <div class="container-img">
+                <p>Goo Gone</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-40', -1)">-</button>
+            <span id="quantity-value-40">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-40', 1)">+</button>
+        </div>
+    </article>    
+        
+        
+        
+        
+    </div>
+        
+        
+    <div class="container">
+    
+    
+    
+    
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic 7.jpg">
+            <div class="container-img">
+                <p>Spic and Span</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-41', -1)">-</button>
+            <span id="quantity-value-41">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-41', 1)">+</button>
+        </div>
+    </article>        
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic23.jpg">
+            <div class="container-img">
+                <p>Tape Roll<br>(Single)</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-42', -1)">-</button>
+            <span id="quantity-value-42">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-42', 1)">+</button>
+        </div>                      
+        </article>         
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic26.jpg">
+            <div class="container-img">
+                <p>Door Magnets<br>(Single)</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-43', -1)">-</button>
+            <span id="quantity-value-43">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-43', 1)">+</button>
+        </div>
+    </article>             
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic43.jpg">
+            <div class="container-img">
+                <p>Chains<br>(Single)</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-45', -1)">-</button>
+            <span id="quantity-value-45">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-45', 1)">+</button>
+        </div>
+    </article>         
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic42.jpg">
+            <div class="container-img">
+                <p>Locks</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-46', -1)">-</button>
+            <span id="quantity-value-46">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-46', 1)">+</button>
+        </div>
+    </article>     
+    
+            
+            
+            
+    </div>    
+    
+    
+    <div class="container">
+    
+    
+    
+               
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic49.jpg">
+            <div class="container-img">
+                <p>Ladder 6'ft</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-47', -1)">-</button>
+            <span id="quantity-value-47">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-47', 1)">+</button>
+        </div>
+    </article>            
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic49.jpg">
+            <div class="container-img">
+                <p>Ladder 8'ft</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-48', -1)">-</button>
+            <span id="quantity-value-48">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-48', 1)">+</button>
+        </div>
+    </article>              
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic51.jpg">
+            <div class="container-img">
+                <p>Ladder 10'ft</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-49', -1)">-</button>
+            <span id="quantity-value-49">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-49', 1)">+</button>
+        </div>
+    </article>            
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic51.jpg">
+            <div class="container-img">
+                <p>Ladder 12'ft</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-50', -1)">-</button>
+            <span id="quantity-value-50">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-50', 1)">+</button>
+        </div>
+    </article>            
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic50.jpg">
+            <div class="container-img">
+                <p>Platform Ladder 8'ft</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-52', -1)">-</button>
+            <span id="quantity-value-52">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-52', 1)">+</button>
+        </div>
+    </article>   
+    
+                
+                
+                
+    </div> 
+    
+    
+    <div class="container">
+    
+    
+    
+                    
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic48.jpg">
+            <div class="container-img">
+                <p>Platform Ladder 10'ft</p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-53', -1)">-</button>
+            <span id="quantity-value-53">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-53', 1)">+</button>
+        </div>
+    </article>               
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic12.jpg">
+            <div class="container-img">
+                <p>Nitrile Gloves<br>(1 Box) <div class="red">Small</div></p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-54', -1)">-</button>
+            <span id="quantity-value-54">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-54', 1)">+</button>
+        </div>
+    </article>               
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic12.jpg">
+            <div class="container-img">
+                <p>Nitrile Gloves<br>(1 Box) <div class="red">Medium</div></p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-55', -1)">-</button>
+            <span id="quantity-value-55">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-55', 1)">+</button>
+        </div>
+    </article>                   
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic12.jpg">
+            <div class="container-img">
+                <p>Nitrile Gloves<br>(1 Box) <div class="red">Large</div></p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-56', -1)">-</button>
+            <span id="quantity-value-56">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-56', 1)">+</button>
+        </div>
+    </article>                
+    <!--This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.This is a item.--> 
+    <article class="style">
+        <div class="polaroid">
+            <img class="item" src="img/pic12.jpg">
+            <div class="container-img">
+                <p>Nitrile Gloves<br>(1 Box) <div class="red">Extra Large</div></p>
+            </div>
+        </div>                        
+        <!-- Quantity Box -->
+        <div class="quantity-box">
+            <h4>Quantity</h4>
+            <button class="quantity-minus" onclick="changeQuantity('quantity-value-57', -1)">-</button>
+            <span id="quantity-value-57">0</span>
+            <button class="quantity-plus" onclick="changeQuantity('quantity-value-57', 1)">+</button>
+        </div>
+    </article>    
+    
+                    
+                    
+                    
+    </div> 
+    
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    
+    <br> <br> <br> <hr> <br> <br> <br> 
+        <div id="submit-button" class="submit-button">
+            <button onclick="downloadExcel()">Submit</button>
+        </div>
+    <br> <br> <br>
+    
+    
+    
+    
+    <table class="database">
+        <tr>
+            <th>Item Name</th><th>Job Site</th><th>Quantity</th>
+        </tr>
+    
+        <tr>
+            <td>Vacuums</td>
+            <td id="jnumber-value-1">Job Number</td>
+            <td id="quantity-value-1-cell"></td>
+        </tr>
+        <tr>
+            <td>Vacuum Accessories Set</td>
+            <td id="jnumber-value-2">Job Number</td>
+            <td id="quantity-value-2-cell"></td>
+        </tr>
+        <tr>
+            <td>Vacuum Bags</td>
+            <td id="jnumber-value-3">Job Number</td>
+            <td id="quantity-value-3-cell"></td>
+        </tr>
+        <tr>
+            <td>25' Extension Cords</td>
+            <td id="jnumber-value-4">Job Number</td>
+            <td id="quantity-value-4-cell"></td>
+        </tr>
+        <tr>
+            <td>50' Extension Cords</td>
+            <td id="jnumber-value-5">Job Number</td>
+            <td id="quantity-value-5-cell"></td>
+        </tr>
+    
+    
+    
+        <tr>
+            <td>100' Extension Cords</td>
+            <td id="jnumber-value-6">Job Number</td>
+            <td id="quantity-value-6-cell"></td>
+        </tr>
+        <tr>
+            <td>Single GFI</td>
+            <td id="jnumber-value-7">Job Number</td>
+            <td id="quantity-value-7-cell"></td>
+        </tr>
+        <tr>
+            <td>3-way GFCI</td>
+            <td id="jnumber-value-8">Job Number</td>
+            <td id="quantity-value-8-cell"></td>
+        </tr>
+        <tr>
+            <td>Tile Puller</td>
+            <td id="jnumber-value-9">Job Number</td>
+            <td id="quantity-value-9-cell"></td>
+        </tr>
+        <tr>
+            <td>Wet Floor Signs</td>
+            <td id="jnumber-value-10">Job Number</td>
+            <td id="quantity-value-10-cell"></td>
+        </tr>
+    
+    
+    
+        <tr>
+            <td>Cones</td>
+            <td id="jnumber-value-11">Job Number</td>
+            <td id="quantity-value-11-cell"></td>
+        </tr>
+        <tr>
+            <td>Barricades</td>
+            <td id="jnumber-value-12">Job Number</td>
+            <td id="quantity-value-12-cell"></td>
+        </tr>
+        <tr>
+            <td>Mop Sticks</td>
+            <td id="jnumber-value-13">Job Number</td>
+            <td id="quantity-value-13-cell"></td>
+        </tr>
+        <tr>
+            <td>Mop Bucket</td>
+            <td id="jnumber-value-14">Job Number</td>
+            <td id="quantity-value-14-cell"></td>
+        </tr>
+        <tr>
+            <td>Mop Wringer</td>
+            <td id="jnumber-value-15">Job Number</td>
+            <td id="quantity-value-15-cell"></td>
+        </tr>
+    
+    
+    
+        <tr>
+            <td>Mop Heads</td>
+            <td id="jnumber-value-16">Job Number</td>
+            <td id="quantity-value-16-cell"></td>
+        </tr>
+        <tr>
+            <td>Rise</td>
+            <td id="jnumber-value-17">Job Number</td>
+            <td id="quantity-value-17-cell"></td>
+        </tr>
+        <tr>
+            <td>Knee Pads</td>
+            <td id="jnumber-value-18">Job Number</td>
+            <td id="quantity-value-18-cell"></td>
+        </tr>
+        <tr>
+            <td>Headlight</td>
+            <td id="jnumber-value-19">Job Number</td>
+            <td id="quantity-value-19-cell"></td>
+        </tr>
+        <tr>
+            <td>Flashlight</td>
+            <td id="jnumber-value-20">Job Number</td>
+            <td id="quantity-value-20-cell"></td>
+        </tr>
+    
+    
+    
+        <tr>
+            <td>Spare Batteries</td>
+            <td id="jnumber-value-21">Job Number</td>
+            <td id="quantity-value-21-cell"></td>
+        </tr>
+        <tr>
+            <td>Scrapers</td>
+            <td id="jnumber-value-22">Job Number</td>
+            <td id="quantity-value-22-cell"></td>
+        </tr>
+        <tr>
+            <td>Sponges</td>
+            <td id="jnumber-value-23">Job Number</td>
+            <td id="quantity-value-23-cell"></td>
+        </tr>
+        <tr>
+            <td>Swiffer Refills</td>
+            <td id="jnumber-value-24">Job Number</td>
+            <td id="quantity-value-24-cell"></td>
+        </tr>
+        <tr>
+            <td>Swiffer extensions</td>
+            <td id="jnumber-value-25">Job Number</td>
+            <td id="quantity-value-25-cell"></td>
+        </tr>
+    
+    
+    
+        <tr>
+            <td>Trash Can/Wheels</td>
+            <td id="jnumber-value-26">Job Number</td>
+            <td id="quantity-value-26-cell"></td>
+        </tr>
+        <tr>
+            <td>Trash Bags</td>
+            <td id="jnumber-value-27">Job Number</td>
+            <td id="quantity-value-27-cell"></td>
+        </tr>
+        <tr>
+            <td>5-Gallon Buckets</td>
+            <td id="jnumber-value-28">Job Number</td>
+            <td id="quantity-value-28-cell"></td>
+        </tr>
+        <tr>
+            <td>Microfiber Packs</td>
+            <td id="jnumber-value-29">Job Number</td>
+            <td id="quantity-value-29-cell"></td>
+        </tr>
+        <tr>
+            <td>Flat Sticks</td>
+            <td id="jnumber-value-30">Job Number</td>
+            <td id="quantity-value-30-cell"></td>
+        </tr>
+    
+    
+    
+        <tr>
+            <td>Uline Clean Wipes</td>
+            <td id="jnumber-value-31">Job Number</td>
+            <td id="quantity-value-31-cell"></td>
+        </tr>
+        <tr>
+            <td>Q-Tips</td>
+            <td id="jnumber-value-32">Job Number</td>
+            <td id="quantity-value-32-cell"></td>
+        </tr>
+        <tr>
+            <td>Anti-Static Brushes</td>
+            <td id="jnumber-value-33">Job Number</td>
+            <td id="quantity-value-33-cell"></td>
+        </tr>
+        <tr>
+            <td>Greased Lightning</td>
+            <td id="jnumber-value-34">Job Number</td>
+            <td id="quantity-value-34-cell"></td>
+        </tr>
+        <tr>
+            <td>Alcohol Gallon</td>
+            <td id="jnumber-value-35">Job Number</td>
+            <td id="quantity-value-35-cell"></td>
+        </tr>
+    
+    
+    
+        <tr>
+            <td>Perfecto</td>
+            <td id="jnumber-value-36">Job Number</td>
+            <td id="quantity-value-36-cell"></td>
+        </tr>
+        <tr>
+            <td>Staticide Gallon</td>
+            <td id="jnumber-value-37">Job Number</td>
+            <td id="quantity-value-37-cell"></td>
+        </tr>
+        <tr>
+            <td>Simple Green</td>
+            <td id="jnumber-value-38">Job Number</td>
+            <td id="quantity-value-38-cell"></td>
+        </tr>
+        <tr>
+            <td>Heavy Duty Citrus Degreaser</td>
+            <td id="jnumber-value-39">Job Number</td>
+            <td id="quantity-value-39-cell"></td>
+        </tr>
+        <tr>
+            <td>Goo Gone</td>
+            <td id="jnumber-value-40">Job Number</td>
+            <td id="quantity-value-40-cell"></td>
+        </tr>
+    
+    
+    
+        <tr>
+            <td>Spic and Span</td>
+            <td id="jnumber-value-41">Job Number</td>
+            <td id="quantity-value-41-cell"></td>
+        </tr>
+        <tr>
+            <td>Tape Roll</td>
+            <td id="jnumber-value-42">Job Number</td>
+            <td id="quantity-value-42-cell"></td>
+        </tr>
+        <tr>
+            <td>Door Magnets</td>
+            <td id="jnumber-value-43">Job Number</td>
+            <td id="quantity-value-43-cell"></td>
+        </tr>
+        <tr>
+            <td>Chains</td>
+            <td id="jnumber-value-45">Job Number</td>
+            <td id="quantity-value-45-cell"></td>
+        </tr>
+        <tr>
+            <td>Locks</td>
+            <td id="jnumber-value-46">Job Number</td>
+            <td id="quantity-value-46-cell"></td>
+        </tr>
+    
+    
+    
+        <tr>
+            <td>Ladder 6'ft</td>
+            <td id="jnumber-value-47">Job Number</td>
+            <td id="quantity-value-47-cell"></td>
+        </tr>
+        <tr>
+            <td>Ladder 8'ft</td>
+            <td id="jnumber-value-48">Job Number</td>
+            <td id="quantity-value-48-cell"></td>
+        </tr>
+        <tr>
+            <td>Ladder 10'ft</td>
+            <td id="jnumber-value-49">Job Number</td>
+            <td id="quantity-value-49-cell"></td>
+        </tr>
+        <tr>
+            <td>Ladder 12'ft</td>
+            <td id="jnumber-value-50">Job Number</td>
+            <td id="quantity-value-50-cell"></td>
+        </tr>
+        <tr>
+            <td>Platform Ladder 8'ft</td>
+            <td id="jnumber-value-52">Job Number</td>
+            <td id="quantity-value-52-cell"></td>
+        </tr>
+    
+    
+    
+        <tr>
+            <td>Platform Ladder 10'ft</td>
+            <td id="jnumber-value-53">Job Number</td>
+            <td id="quantity-value-53-cell"></td>
+        </tr>
+        <tr>
+            <td>Nitrile Gloves small</td>
+            <td id="jnumber-value-54">Job Number</td>
+            <td id="quantity-value-54-cell"></td>
+        </tr>
+        <tr>
+            <td>Nitrile Gloves medium</td>
+            <td id="jnumber-value-55">Job Number</td>
+            <td id="quantity-value-55-cell"></td>
+        </tr>
+        <tr>
+            <td>Nitrile Gloves large</td>
+            <td id="jnumber-value-56">Job Number</td>
+            <td id="quantity-value-56-cell"></td>
+        </tr>
+        <tr>
+            <td>Nitrile Gloves extra large</td>
+            <td id="jnumber-value-57">Job Number</td>
+            <td id="quantity-value-57-cell"></td>
+        </tr>
+    
+    
+        
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
